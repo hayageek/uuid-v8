@@ -1,0 +1,32 @@
+{
+  "name": "uuidv8",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.js"
+  },
+  "bin": {
+    "uuidv7": "cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayageek/uuidv8.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["uuidv8","uuid"],
+  "author": "Ravishanker Kusuma",
+  "license": "Apache-2.0",  
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
