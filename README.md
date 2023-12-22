@@ -1,6 +1,11 @@
 # uuid-v8
 An experimental implementation of the proposed UUID Version 8
 
+### Installation
+```bash
+npm install uuid-v8 --save
+```
+
 
 ### Default
 ```javascript
@@ -94,4 +99,8 @@ An implementation has other application/language restrictions which inhibit the 
 
 The MIT License (MIT)
 
+
+## External Links
+[UUID Generator](https://uuidgenerator.dev/)
+[RFC4122](https://www.ietf.org/archive/id/draft-ietf-uuidrev-rfc4122bis-11.html)
 
