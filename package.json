@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc",
     "doc": "typedoc ./src/index.ts --gitRevision \"v$npm_package_version\"",
-    "test": "jest"
+    "test": "npx mocha test/"
   },
   "keywords": [
     "uuidv8",
