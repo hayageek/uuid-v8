@@ -1,6 +1,6 @@
 {
   "name": "uuidv8",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "main": "dist/index.js",
@@ -21,12 +21,20 @@
   },
   "scripts": {
     "build": "tsc",
+    "doc": "typedoc ./src/index.ts --gitRevision \"v$npm_package_version\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["uuidv8","uuid"],
+  "keywords": [
+    "uuidv8",
+    "uuid"
+  ],
   "author": "Ravishanker Kusuma",
-  "license": "Apache-2.0",  
+  "license": "Apache-2.0",
   "devDependencies": {
+    "typedoc": "^0.25.4",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "mocha": "^10.2.0"
   }
 }
