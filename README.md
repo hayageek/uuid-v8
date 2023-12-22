@@ -1,4 +1,4 @@
-# uuidv8
+# uuid-v8
 An experimental implementation of the proposed UUID Version 8
 
 
@@ -8,6 +8,15 @@ import { uuidv8 } from "uuid-v8";
 
 const result = uuidv8(); // e.g., "07e70c15-0f38-8bfc-ba65-f0ec85dc2812"
 ```
+    (or)
+
+```javascript
+const { uuidv8 } = require("uuid-v8")
+
+const result = uuidv8(); // e.g., "07e70c15-0f38-8bfc-ba65-f0ec85dc2812"
+```
+
+
 
 
 ### with custom time
@@ -46,10 +55,10 @@ const bytesInHex = UUID.parseToHex('07e70c16-0631-870e-0316-e51b1fab5ebb');
 ### Command-line interface:
 
 ```bash
-$ npx uuidv8
+$ npx uuid-v8
 07e70c16-0637-8003-0139-e65bfe87ae09
 $
-$ npx uuidv8 -n 4
+$ npx uuid-v8 -n 4
 07e70c16-0637-8e13-0085-98ded92d312c
 07e70c16-0637-8713-0087-558d00e6ffa1
 07e70c16-0637-8e13-0087-8deb1113ab9e
