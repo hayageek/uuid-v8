@@ -15,11 +15,11 @@ const result = uuidv8(); // e.g., "07e70c15-0f38-8bfc-ba65-f0ec85dc2812"
 import { UUID } from "uuidv8";
 
 //current Time
-const result = UUID.generate(); // e.g., "07e70c16-0631-870e-0316-e51b1fab5ebb"
+const uuid1 = UUID.generate(); // e.g., "07e70c16-0631-870e-0316-e51b1fab5ebb"
 
 //Generate for a given time
 var t = new Date()
-const result = UUID.generate({time:t}); 
+const uuid2 = UUID.generate({time:t}); 
 ```
 
 ### Get time associated with the UUID
@@ -38,7 +38,7 @@ import { UUID } from "uuidv8";
 //Gets the time associated with the UUID
 const bytes = UUID.parse('07e70c16-0631-870e-0316-e51b1fab5ebb'); 
 
-const bytesInHex = UUID.parseHex('07e70c16-0631-870e-0316-e51b1fab5ebb'); 
+const bytesInHex = UUID.parseToHex('07e70c16-0631-870e-0316-e51b1fab5ebb'); 
 
 ```
 
