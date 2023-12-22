@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc",
     "doc": "typedoc ./src/index.ts --gitRevision \"v$npm_package_version\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "uuidv8",
@@ -31,10 +31,9 @@
   "author": "Ravishanker Kusuma",
   "license": "Apache-2.0",
   "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
     "typedoc": "^0.25.4",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "mocha": "^10.2.0"
   }
 }

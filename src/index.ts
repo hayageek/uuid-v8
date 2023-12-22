@@ -43,10 +43,6 @@ export class UUID {
       crypto.randomBytes(10).copy(buf, 6);
     }
 
-    // Manipulate bits according to version and variant requirements
-    buf.writeUInt8((buf.readUInt8(6) & 0x0f) | 0x80, 6);
-    buf.writeUInt8((buf.readUInt8(8) & 0x3f) | 0x80, 8);
-
 
     buf.writeUInt16BE(time.getUTCFullYear(), 0);
     buf.writeUInt8(time.getUTCMonth() + 1, 2); // Months are 0-indexed in JavaScript
@@ -55,6 +51,14 @@ export class UUID {
     buf.writeUInt8(time.getUTCMinutes(), 5);
     buf.writeUInt8(time.getUTCSeconds(), 7);
     buf.writeUInt16BE(time.getUTCMilliseconds(), 8);
+
+    // Manipulate bits according to version and variant requirements
+    buf.writeUInt8((buf.readUInt8(6) & 0x0f) | 0x80, 6);
+    buf.writeUInt8(buf.readUInt8(8) | (8 << 4), 8);
+
+
+
+    //buf.writeUInt8((buf.readUInt8(8) & 0x3f) | 0x80, 8);
 
     return UUID.stringify(buf);
   }
@@ -79,7 +83,7 @@ export class UUID {
     const hours = buf.readUInt8(4);
     const minutes = buf.readUInt8(5);
     const seconds = buf.readUInt8(7);
-    const milliseconds = buf.readUInt16BE(8);
+    const milliseconds = buf.readUInt16BE(8) & 0x0fff;
 
     return new Date(Date.UTC(year, month, day, hours, minutes, seconds, milliseconds));
   }
@@ -102,8 +106,8 @@ export class UUID {
         }
 
         // Check the variant bits
-        const variant = (uuidBytes[8] & 0xc0) >> 6;
-        if (variant !== 2) {
+        const variant = (uuidBytes[8] & 0xc0) >> 4;
+        if (variant !== 8) {
           return false;
         }
 
