@@ -31,6 +31,7 @@
   "author": "Ravishanker Kusuma",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/node": "^20.10.5",
     "chai": "^4.3.10",
     "mocha": "^10.2.0",
     "typedoc": "^0.25.4",
