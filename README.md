@@ -89,14 +89,9 @@ An implementation has other application/language restrictions which inhibit the 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-## CommonJS support
-
-The CommonJS entry point is deprecated and provided for backward compatibility
-purposes only. The entry point is no longer tested and will be removed once this
-library hits the stable version number of v1.
 
 ## License
 
-Licensed under the Apache License, Version 2.0.
+The MIT License (MIT)
 
 
