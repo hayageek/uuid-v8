@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UUID, uuidv8 } from  "uuidv8";
+import { UUID, uuidv8 } from  "uuid-v8";
 
 describe('UUID Module', () => {
   describe('UUID.generate', () => {
