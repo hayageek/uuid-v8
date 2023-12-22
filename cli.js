@@ -5,7 +5,7 @@ import { exit, stdout } from "node:process";
 import { parseArgs } from "node:util";
 import { pipeline } from "node:stream/promises";
 
-import { uuidv8 } from "uuidv8";
+import { uuidv8 } from "uuid-v8";
 
 // check arguments
 let options = undefined;

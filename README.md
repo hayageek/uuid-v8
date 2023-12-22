@@ -4,7 +4,7 @@ An experimental implementation of the proposed UUID Version 8
 
 ### Default
 ```javascript
-import { uuidv8 } from "uuidv8";
+import { uuidv8 } from "uuid-v8";
 
 const result = uuidv8(); // e.g., "07e70c15-0f38-8bfc-ba65-f0ec85dc2812"
 ```
@@ -12,7 +12,7 @@ const result = uuidv8(); // e.g., "07e70c15-0f38-8bfc-ba65-f0ec85dc2812"
 
 ### with custom time
 ```javascript
-import { UUID } from "uuidv8";
+import { UUID } from "uuid-v8";
 
 //current Time
 const uuid1 = UUID.generate(); // e.g., "07e70c16-0631-870e-0316-e51b1fab5ebb"
@@ -24,7 +24,7 @@ const uuid2 = UUID.generate({time:t});
 
 ### Get time associated with the UUID
 ```javascript
-import { UUID } from "uuidv8";
+import { UUID } from "uuid-v8";
 
 //Gets the time associated with the UUID
 const date = UUID.getTime('07e70c16-0631-870e-0316-e51b1fab5ebb'); 
@@ -33,7 +33,7 @@ const date = UUID.getTime('07e70c16-0631-870e-0316-e51b1fab5ebb');
 
 ### Parse the UUID to Bytes
 ```javascript
-import { UUID } from "uuidv8";
+import { UUID } from "uuid-v8";
 
 //Gets the time associated with the UUID
 const bytes = UUID.parse('07e70c16-0631-870e-0316-e51b1fab5ebb'); 

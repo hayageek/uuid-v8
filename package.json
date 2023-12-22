@@ -1,6 +1,6 @@
 {
-  "name": "uuidv8",
-  "version": "0.0.1",
+  "name": "uuid-v8",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "default": "./dist/index.js"
   },
   "bin": {
-    "uuidv8": "cli.js"
+    "uuid-v8": "cli.js"
   },
   "files": [
     "dist"
