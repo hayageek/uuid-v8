@@ -101,6 +101,5 @@ The MIT License (MIT)
 
 
 ## External Links
-[UUID Generator](https://uuidgenerator.dev/)
-[RFC4122](https://www.ietf.org/archive/id/draft-ietf-uuidrev-rfc4122bis-11.html)
-
+* [UUID Generator](https://uuidgenerator.dev/)
+* [RFC4122](https://www.ietf.org/archive/id/draft-ietf-uuidrev-rfc4122bis-11.html)
